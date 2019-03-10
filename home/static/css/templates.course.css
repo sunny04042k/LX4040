@@ -1,0 +1,70 @@
+/* bung */
+.bug{
+  width: 100%;
+  background: #1f1f1f;
+  border-radius: 3px;}
+.title-bug a {color:white;text-decoration:none;}
+.title-bug {border-bottom:1px solid white;margin:10px 15px 2px 15px;height: 58px;overflow: hidden;font-size:30px;text-align: center;}
+.info-bug div {display: inline-block;margin:0 2px;}
+.info-bug div a {text-decoration: none;color:white}
+.info-bug {padding: 10px 15px 15px 15px}
+.content-bug {padding: 15px 15px 0 15px;height: 60px;overflow: hidden;}
+.content-bug span{color:white;text-align: center;}
+.read-bug {padding: 0 15px 15px 15px;}
+
+
+
+/* ------ */
+/* course */
+.course{
+  background: #1f1f1f;
+  padding-bottom: 10px;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 3px;}
+.post-course {width: 100%;height: 180px;position: relative;}
+.post-course img {display: block;width: 100%;height: 180px;}
+.posts-course {
+    width: 0;
+    height: 180px;
+    background: #c3007ec2;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.3s ease; }
+.post-course:hover .posts-course{
+  width: 100%;
+}
+.img-post-course img {border-radius: 5px;}
+.title-course a {color:white;text-decoration:none;}
+.title-course {border-bottom:1px solid white;margin:10px 15px 2px 15px;height: 58px;overflow: hidden;}
+.info-course {margin: 5px 15px 15px 15px}
+.info-course div {display: inline-block;max-width: 50%;margin: 5px;}
+.info-course div a {text-decoration: none; color:white}
+.icon-info {margin-right: 4px;}
+.author-course {}
+.tag-course {}
+.read-lessons-course {padding: 0 15px;}
+.read-lessons-course div {padding-bottom: 5px;display: inline-block;}
+.read-course a {font-size:20px;transition:all 0.3s;color:white;text-decoration:none;background:#212529;border:1px solid blue;padding: 4px 15px 4px 15px;border-radius: 3px;}
+.read-course a:hover {background: white;color:black}
+.lessons-course {float: right;}
+.lessons-course span{color:white;font-size:18px}
+
+/* ------------- */
+/* howto */
+.page-howto {background: #1f1f1f;border-radius: 5px;}
+.body-howto {margin-bottom: 20px;}
+.title-howto {color:white;background: #7d0050;border-radius: 5px 5px 0 0 }
+.write-read-howto div {display: inline-block;}
+.write-howto, .read-howto {width: 48%;}
+.templates-howto {width: 100%;}
+.title-templates-howto {color:white}
+.body-templates-howto {border:2px solid blue; padding: 10px 20px 10px 20px}
+.body-templates-howto a {color:white;text-decoration:none;font-size:30px;}
+.body-templates-howto:hover{border:2px solid red}
+/*---------------*/

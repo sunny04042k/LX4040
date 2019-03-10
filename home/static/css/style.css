@@ -1,0 +1,89 @@
+body {
+  background: #0e0e0e url(https://imgur.com/6RIm8dV.png) fixed;
+}
+.container-all {margin-left: 50px;margin-right: 50px;}
+.menu-top {padding-bottom: 10px;}
+.sub-menu-link a{
+  color:white;
+  text-decoration: none;
+}
+.sub-menu-link a i {
+  font-size: 30px;
+  padding: 10px;
+}
+.user-path-page {background: #171717;height: 40px;overflow: hidden;position:relative;border-radius: 5px}
+.user-path-page div {display: inline-block}
+.user-page {padding: 7px 10px;}
+.user-page div {padding: 0 10px;}
+.user-page span {color:white;padding: 10px}
+.user-page a {color:white; text-decoration: none;}
+.user-page {float: right;}
+.path-page .icon-home {float: left;padding: 7px 1px 7px 15px;position: relative;z-index: 2}
+.path-page .sub-icon-home {float: left;padding: 7px 1px 7px 0;position: relative;z-index: 2}
+.path-page .icon-home a {color:white}
+.path-page .sub-icon-home a {color:white}
+.pad-v{
+  z-index: 1;
+  right:10px;
+  float: left;
+  background: #171717;
+  position: relative;
+  box-shadow: 2px -2px 0 2px rgb(13, 13, 13);
+  transform: scale(0.707) rotate(45deg);
+  height: 40px;
+  width: 40px;
+}
+.bot-menu{margin-top: 20px;margin-bottom: 20px;}
+.bot-menu ul li {
+  margin: 10px;
+  padding: 10px 20px;
+  background:#1f1f1f;
+  display: inline-block;
+}
+.table-menu a {
+  font-size:20px;
+  font-weight: bold;
+  position: relative;
+  color:white;
+  text-decoration: none;
+}
+.table-menu {padding: 0;}
+.table-menu a li {border-radius: 3px}
+.table-menu a li:hover{background: white;color:black;transition: all 0.3s;}
+.icon-page {margin-right: 5px;}
+.title-info {
+  padding-top: 10PX;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 3px;
+  //background: #8a0025d9;
+  color:white;
+  font-size: 25px;
+}
+.info-page {
+  padding: 10px;
+  border:3px double white;
+  box-shadow: 0 2px 4px 0 black,0 2px 10px 0 black;
+  width: 100%;
+  background: #171717
+}
+.hi-user{margin-left: 10px;}
+.img-body-info {padding: 10px;}
+.img-body-info img {width: 100%;height: 50px;}
+.content-body-info {color:white;padding: 10px;}
+.content-body-info span{font-size:18px;text-decoration: none;}
+.content-body-info span a {text-decoration: none;color:#26efe7}
+.icon-db a {padding: 0;}
+.icon-toggle {padding-top:-2px;}
+.icon-toggle, .icon-toggle-on {display: none; font-size:30px;float: left}
+.column-course {max-width: 25%;padding-left: 15px;padding-right: 15px;}
+.column-bug {max-width: 25%;padding-left: 15px;padding-right: 15px;}
+.column-howto {max-width: 100%;padding-left: 15px;padding-right: 15px;}
+.body-all {padding: 30px 0}
+@font-face {
+  font-family: myFirstFont;
+  src: url(wet_pet.ttf);
+}
+.title-page {font-family: myFirstFont;}
+.title-page h1 {font-size:80px;}

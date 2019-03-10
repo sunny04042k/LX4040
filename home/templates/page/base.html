@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load  staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page_index</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templates.course.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/post.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-all" style="margin-bottom:200px;">
+        <div class="row">
+            <div class="col">
+             <center>
+               <div class="title-page">
+                <h1 style="color:white">Flsecurity404</h1>
+              </div>
+              </center>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <center>
+              <div class="menu-top">
+                <div class="sub-menu-link">
+                  <a  href=""><i class="fas fa-home"></i></a>
+                  <a  href=""><i class="fas fa-search"></i></a>
+                  <a  href=""><i class="fas fa-users"></i></a>
+                  <a  href=""><i class="fa fa-info-circle"></i></a>
+                  <a  href=""><i class="fab fa-twitter"></i></i></a>
+                  <a  href=""><i class="fab fa-facebook-f"></i></a>
+                  <a  href=""><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+            </center>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="user-path-page">
+              <div class="path-page">
+                <div class="icon-home"><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></div>
+                <div class="pad"><span class="pad-v"></span></div>
+              </div>
+              {% block path_page %}
+              {% endblock %}
+              <div class="user-page">
+                {% if user.username %}
+                  <div class="hi-user"><span>Hi {{user.username}}</span></div>
+                  <div class="logout"><a href="{% url 'logout' %}">Logout</a></div>
+                {% else %}
+                  <div class="login"><a href="{% url 'login' %}">Login</a></div>
+                  <div class="register"><a href="{% url 'register' %}">Register</a></div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"><img src="https://imgur.com/VqRhQWz.gif" style="width:100%;height:100px;padding-top:10px;padding-bottom:10px;"></img></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="bot-menu">
+              <center>
+                <ul class="table-menu">
+                  <a href="{% url 'home' %}"><li id='l'><i class="fab fa-creative-commons-sampling icon-page"></i>Common</li></a>
+                  <a href=""><li id='r'><i class="fas fa-bug icon-page"></i>Bug</li></a>
+                  <a href=""><li id='l'><i class="fas fa-khanda icon-page"></i>Hacking</li></a>
+                  <a href="{% url 'code' %}"><li id='r'><i class="fas fa-code icon-page"></i>Code</li></a>
+                  <a href=""><li id='l'><i class="fas fa-chalkboard-teacher icon-page"></i>Teach</li></a>
+                  <a href=""><li id='r'><i class="fas fa-check icon-page"></i>Trick</li></a>
+                  <a href=""><li id='l'><i class="fas fa-desktop icon-page"></i>System</li></a>
+                  <a href=""><li id='r'><i class="fas fa-question icon-page"></i>How to</li></a>
+                </ul>
+              </center>
+            </div>
+          </div>
+        </div>
+      {% block body %}{% endblock %}
+    </div>
+    <script>
+      $(document).ready(function(){
+          $('#tg-on').hide();
+          $("#tg-of").click(function(){
+            $('#tg-of').hide();
+            $('#tg-on').show();
+          });
+          $("#tg-on").click(function(){
+            $('#tg-on').hide();
+            $('#tg-of').show();
+          });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

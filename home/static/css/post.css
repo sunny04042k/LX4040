@@ -1,0 +1,7 @@
+.body-post{background: #001eff45;border-radius: 5px;padding: 20px;margin-bottom: 20px}
+.title-post {text-align: center;color:#b7b7b7}
+.list-content-post h3 {color:white;font-weight: bold}
+.example-code-post {background: black;padding: 20px;border-left: 5px solid red;border-radius: 0 3px 3px 0}
+.comment-post{background: #001eff45;border-radius: 5px;padding: 20px;}
+.content-comment span {color:#b7b7b7}
+.content-comment span a {text-decoration: none;}

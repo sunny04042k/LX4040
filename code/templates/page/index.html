@@ -1,0 +1,49 @@
+{% extends "page/base.html" %}
+{% block path_page %}
+<div class="path-page">
+  <div class="sub-icon-home"><a href="{% url 'code' %}"><i class="fas fa-code"></i></a></div>
+  <div class="pad"><span class="pad-v"></span></div>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-all">
+  <div class="row">
+    {% for post in HTML %}
+    <div class="column-course">
+      <div class="course">
+        <div class="post-course">
+          <div class="img-post-course">
+            <img src="https://imgur.com/BJc3JWl.jpg"></img>
+          </div>
+          <div class="posts-course">
+            <div class="views-course">
+              <span><i class="far fa-eye icon-page"></i>123.15 views</span>
+            </div>
+          </div>
+        </div>
+        <div class="title-course">
+          <a href="html/{{post.path}}" >{{post.title}}</a>
+        </div>
+        <div class="info-course">
+          <div class="author-course">
+            <a href=""><i class="fas fa-user icon-info"></i>{{post.author}}</a>
+          </div>
+          <div class="tag-course">
+            <a href=""><i class="fas fa-tags icon-info"></i>html</a>
+          </div>
+        </div>
+        <div class="read-lessons-course">
+          <div class="read-course">
+            <a href=""><i class="fas fa-fire-alt icon-page"></i>Views</a>
+          </div>
+          <div class="lessons-course">
+            <span>8 lessons </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
